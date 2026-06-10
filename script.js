@@ -1,10 +1,10 @@
 //elementos do dom
-const fomrPessoa = documenet.querySelector
+const formPessoa = document.querySelector
 ("#formulario-pessoa")
 const  divDados = document.querySelector
 ("#div-dados")
 
-fomrPessoa.addEventListener('submit', (evt)=>){
+formPessoa.addEventListener('submit', (evt)=> {
     evt.preventDefault()
 
     const dadosForm = new FormData(formPessoa)
@@ -12,7 +12,8 @@ fomrPessoa.addEventListener('submit', (evt)=>){
     const nome = dadosForm.get('nome')
     const idade = dadosForm.get('idade')
 
-    let situacaoIdade = idade >= 18 ? `${nome}, é Maior de idade`: `${nome}, é Menor de idade`
+    let situacaoIdade = idade >= 18 ? `${nome}, é um(a) Maior de idade`: `${nome}, é um(a) Menor de idade`
 
     divDados.innerHTML = situacaoIdade
-}
+
+})
