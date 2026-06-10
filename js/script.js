@@ -1,8 +1,6 @@
 //elementos do dom
-const formPessoa = document.querySelector
-("#formulario-pessoa")
-const  divDados = document.querySelector
-("#div-dados")
+const formPessoa = document.querySelector("#formulario-pessoa")
+const  divDados = document.querySelector("#div-dados")
 
 formPessoa.addEventListener('submit', (evt)=> {
     evt.preventDefault()
