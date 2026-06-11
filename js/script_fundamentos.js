@@ -33,3 +33,70 @@ num2 = 58
 
 console.log(num2)
 
+//concatenação
+
+console.log('valor da variável num3 é ' + num3)
+console.log("valor da variável num3 é " + num3)
+console.log('valor da variável num3 é ' , num3)
+console.log(`valor da variável num3 é ${num3}`)
+
+//OPERADORES MATEMÁTICO
+/*
+    + soma
+    - subtração
+    * multiplicação
+    / divisão
+    % módulo - Resto da divisão
+*/
+
+console.log('A soma dos número é', 12 +8)
+console.log('A subtração entre as variáveis: ', num2 - num3)
+console.log('A multiplicação dos números', num2 * 5)
+console.log('A divisõ entre os valores:', num3 / num2)
+console.log(`O resto da divvisão entre 10 e 2 é: ${10 % 2}`)
+
+//OPERADORES RELACIONAIS
+/*
+  > MAIOR
+  < MENOR
+  >= MAIOR IGUAL
+  <= MENOR IGUAL
+  != DIFERENTE
+
+ */
+
+//OPERADORES LÓGICOS
+
+/*
+    && = E
+    || = OU
+*/
+
+
+//TESTE LÓGICO (SELEÇÃO)
+let idade = 50
+if(idade >= 18){
+console.log("É um(a) de Maior")
+}else{
+console.log("É um(a) não de Maior")
+}
+
+idade >= 18 ? console.log("É um(a) de Maior") : console.log("É um(a) não de Maior")
+// em linguagem, o "?" seria o SE e o ":" seria o senao
+
+/**
+    Renovação do CNH
+    18 -> 49 -> 10 ANOS
+    50 à 69 -> 5 anos
+    70 acima -> 3 anos
+ */
+
+    if(idade < 18){
+        console.log(`com ${idade}, NÃO É PERMITIDO POSSUIR CNH `)
+    }else if(idade < 50){
+        console.log(`com ${idade}, RENOVAÇÃO EM 10 ANOS `)
+    }else if(idade < 70){
+        console.log(`com ${idade}, RENOVAÇÃO EM 5 ANOS `)
+    }else{
+        console.log(`com ${idade}, RENOVAÇÃO EM 3 ANOS `)
+    }
